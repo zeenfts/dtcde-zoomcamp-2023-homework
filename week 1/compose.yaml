@@ -1,0 +1,16 @@
+---
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres
+    hostname: postgres
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres_u
+      POSTGRES_PASSWORD: postpass
+      POSTGRES_DB: db_postgres
+    volumes:
+      - ./data:/etc/postgresql
