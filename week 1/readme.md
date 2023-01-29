@@ -1,4 +1,5 @@
-[Homework Questions](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/cohorts/2023/week_1_docker_sql/homework.md)
+[Homework Questions](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/cohorts/2023/week_1_docker_sql/homework.md) |||
+[Homework Questions Part B](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/cohorts/2023/week_1_terraform/homework.md)
 
 ## Info:
 1. Run [/data/script.sh](https://github.com/zeenfts/dtcde-zoomcamp-2023-homework/blob/main/week%201/data/script.sh).

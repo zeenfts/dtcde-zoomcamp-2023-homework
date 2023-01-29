@@ -1,4 +1,7 @@
 *.gz
 *.csv
+terraform.tfstate
+.terraform/
+.terraform.lock.hcl
 # answers.txt
 # *.png
