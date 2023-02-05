@@ -24,10 +24,10 @@ python flows/etl_gcs_to_bq.py
 ```
 prefect block register -m prefect_github
 python blocks/make_github_blocks.py
-prefect deployment build /opt/prefect/flows/github/web_to_gcs.py:web_to_gcs -n gitzoomgreen --tag dev -sb github/zoom-github -a
+prefect deployment build flows/github/web_to_gcs.py:web_to_gcs -n gitzoomgreen --tag dev -sb github/zoom-github -a
 prefect agent start -q 'default'
-prefect deployment run web-to-gcs/gitzoomgreen
+prefect deployment run web-to-gcs/gitzoomgreen -> on different terminal.
 ```
 4. Open up the Prefect UI at [http://127.0.0.1:4200](http://127.0.0.1:4200).
-5. Good Job!
-<sub><sup>**note: If you stop the container & re-start it, don't forget to do "prefect orion start --host 0.0.0.0" again!</sup></sub>
+5. Good Job! <br>
+_**<sub><sup>* note: If you stop the container & re-start it, don't forget to do "prefect orion start --host 0.0.0.0" again for the first time!</sup></sub>**_
