@@ -60,7 +60,7 @@ def web_to_gcs() -> None:
     year = 2020
     month = 11
 
-    dataset_file = f"{color}_tripdata_{year}-{mth:02}"
+    dataset_file = f"{color}_tripdata_{year}-{month:02}"
     dataset_url = f"https://github.com/DataTalksClub/nyc-tlc-data/releases/download/{color}/{dataset_file}.csv.gz"
 
     df = fetch(dataset_url)
