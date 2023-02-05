@@ -5,5 +5,6 @@ creds.json
 terraform.tfstate
 .terraform/
 .terraform.lock.hcl
+__pycache__
 # answers.txt
 # *.png
