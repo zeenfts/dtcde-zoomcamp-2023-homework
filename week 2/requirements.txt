@@ -5,3 +5,4 @@ protobuf==4.21.11
 pyarrow==10.0.1
 pandas-gbq==0.18.1
 psycopg2-binary==2.9.5
+prefect-github

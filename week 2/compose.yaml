@@ -31,10 +31,6 @@ services:
         echo "###################### Prefect App DEZOOMCAMP 2023 ######################"
         echo "#########################################################################"
         prefect orion start --host 0.0.0.0
-        prefect block register -m prefect_gcp
-        python blocks/make_gcp_blocks.py
-        python flows/etl_web_to_gcs.py
-        prefect deployment build flows/etl_web_to_gcs.py:dezoom23 -n dezoomgreen -q test
     environment:
       PREFECT_ORION_API_HOST: 127.0.0.1
       PREFECT_ORION_API_PORT: 4200
