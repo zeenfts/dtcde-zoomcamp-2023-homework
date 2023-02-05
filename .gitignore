@@ -1,5 +1,7 @@
 *.gz
 *.csv
+*.parquet
+creds.json
 terraform.tfstate
 .terraform/
 .terraform.lock.hcl
