@@ -24,7 +24,9 @@ python flows/etl_gcs_to_bq.py
 ```
 prefect block register -m prefect_github
 python blocks/make_github_blocks.py
-prefect deployment build flows/.github/web_to_gcs.py:web_to_gcs -n gitzoomgreen --tag dev -sb github/dev -a
+prefect deployment build flows/github/web_to_gcs.py:web_to_gcs -n gitzoomgreen --tag dev -sb github/zoom-github -a
+prefect agent start -q 'default'
+prefect deployment run web-to-gcs/gitzoomgreen
 ```
 4. Open up the Prefect UI at [http://127.0.0.1:4200](http://127.0.0.1:4200).
 5. Good Job!
